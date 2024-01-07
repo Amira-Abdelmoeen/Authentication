@@ -22,6 +22,7 @@ function SignUp(){
     Users.push(users)
     localStorage.setItem("Users",JSON.stringify(Users))
     ClearForm()
+    
   }else{
     Swal.fire({
       icon: "error",
@@ -60,6 +61,7 @@ function ClearForm() {
     nameInput.value =""
     emailInput.value =""
     passwordInput.value =""
+    window.location.href = "/index.html"
 }
 
 
