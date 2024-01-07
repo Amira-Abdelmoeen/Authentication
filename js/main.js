@@ -11,7 +11,7 @@ if(localStorage.getItem("Users")!=null){
     Users = JSON.parse(localStorage.getItem("Users"))
   }
 
-function SignUp(){
+function SignUp(event){
 
   if (validation()) {
     var users = {
@@ -24,6 +24,7 @@ function SignUp(){
     ClearForm()
     
   }else{
+    event.preventDefault();
     Swal.fire({
       icon: "error",
       title: "Oops...",
@@ -36,7 +37,7 @@ function SignUp(){
 }
 
 // var h1element = document.querySelector("welcome")
-function Login(){
+function Login(event){
   var isFound= false
   for(var i =0; i < Users.length; i++){
     if (Users[i].email==emailLogin.value && Users[i].password==passwordLogin.value){
@@ -46,6 +47,7 @@ function Login(){
     }
   }
   if (isFound==false) {
+    event.preventDefault();
     Swal.fire({
       icon: "error",
       title: "Oops...",
