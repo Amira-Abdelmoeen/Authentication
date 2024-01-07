@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.sign,.login,.home{
+    background-image: url(pexels-photo-3586966.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.sign label,.login label{
+    color: white;
+}
+.bottn{
+    padding: 7px 60px;
+    border: none;
+    color: white;
+    border-radius: 13px;
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+#welcome{
+    background-color:  rgba(4, 187, 187, 0.329);
+    
+}
+.swal2-popup {
+    text-align: left !important;
+}
