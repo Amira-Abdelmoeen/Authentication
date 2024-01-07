@@ -42,7 +42,7 @@ function Login(){
     if (Users[i].email==emailLogin.value && Users[i].password==passwordLogin.value){
       isFound=true
       localStorage.setItem("User",JSON.stringify(Users[i]))
-      window.location.href="/home.html"
+      // window.location.href="/home.html"
     }
   }
   if (isFound==false) {
@@ -61,7 +61,7 @@ function ClearForm() {
     nameInput.value =""
     emailInput.value =""
     passwordInput.value =""
-    window.location.href = "/index.html"
+
 }
 
 
